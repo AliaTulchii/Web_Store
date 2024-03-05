@@ -1,0 +1,30 @@
+.tagline{
+    padding: 8px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    background-color: #8924bb;
+    color: #fff;
+    font-family: var(--font-main);
+
+}
+
+.tagline__desc {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.tagline__link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    text-decoration: none;
+    color: var(--accent);
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    cursor: pointer;    
+    border-bottom: 1px solid var(--accent);
+}
