@@ -1,3 +1,16 @@
 .logo {
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 500;
+    font-family: var(--font-accent);
+
+    color: #edf5e9;
+    background-color: #82f939d9;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.logo__pink{
+    color: #ff42ba;
+    font-size: 30px;
 }

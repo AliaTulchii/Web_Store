@@ -1,0 +1,32 @@
+.nav {
+    background-color: #ff42ba;
+    padding: 16px 0;
+}
+
+.nav__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__logo {
+}
+
+.nav__list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    
+}
+
+.nav__link{
+    color: #fff;
+
+    &:hover, :focus{
+        color: #82f939d9;
+    }
+}
+
+
+.nav__btns {
+}
