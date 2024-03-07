@@ -29,9 +29,29 @@
 
 
 .nav__btns {
-    
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+    align-items: center;
 }
 .nav__btn {
+    
+}
+
+.nav__btn-cart{
+    display: flex;
+    align-items:center;
+    gap: 5px;
 }
 .nav__btn-count {
+    
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight:700;
+    background-color: #82f939d9;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
 }
