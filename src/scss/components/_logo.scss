@@ -1,16 +1,23 @@
 .logo {
-    font-size: 24px;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
     line-height: 1;
     font-weight: 500;
     font-family: var(--font-accent);
 
     color: #edf5e9;
-    background-color: #82f939d9;
+    background-color: var(--accent);
     padding: 10px;
     border-radius: 25px;
+    border: 3px solid #fff;
 }
 
 .logo__pink{
     color: #ff42ba;
     font-size: 30px;
+}
+
+.logo__monster{
+    width: 50px;
 }

@@ -1,6 +1,7 @@
 .nav {
-    background-color: #ff42ba;
-    padding: 16px 0;
+    background-color: var(--page-bg);
+    padding: 16px 0;    
+    margin-bottom: 50px;
 }
 
 .nav__row {
@@ -9,6 +10,7 @@
     justify-content: space-between;
 }
 .nav__logo {
+    z-index: 4;
 }
 
 .nav__list {
@@ -20,10 +22,10 @@
 }
 
 .nav__link{
-    color: #fff;
+    color: var(--text-color);
 
     &:hover, :focus{
-        color: #82f939d9;
+        color: #39d3f9d9;
     }
 }
 
@@ -50,8 +52,8 @@
     font-size: 12px;
     line-height: 20px;
     font-weight:700;
-    background-color: #82f939d9;
+    background-color: var(--accent);
     border-radius: 50%;
-    color: #fff;
+    color: var(--text-color);
     text-align: center;
 }
