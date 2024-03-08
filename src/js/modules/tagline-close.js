@@ -3,7 +3,7 @@ function tagline() {
     const tagline = document.querySelector('.tagline');
 
 
-closeTaglineBtn.onclick = function () {
+    closeTaglineBtn.onclick = function () {
     tagline.remove();
 }
 }
