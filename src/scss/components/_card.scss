@@ -1,4 +1,5 @@
 .card {
+    position: relative;
     display: grid;
     gap: 12px;
     width: 262px;
@@ -10,8 +11,26 @@
             opacity: 1;
             pointer-events: all;
         }
+
+        .card__fav{
+            display: block;
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: all;
+        }
     }
 }
+
+.card__link{
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 .card__picture {
     position: relative;
 }
@@ -34,6 +53,13 @@
     position: absolute;
     top: 16px;
     right: 16px;
+
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+
+    pointer-events: none;
+    z-index: 9;
 }
 
 .card__desc {
@@ -70,5 +96,5 @@
     opacity: 0;
 
     pointer-events: none;
-    
+    z-index: 9;
 }
