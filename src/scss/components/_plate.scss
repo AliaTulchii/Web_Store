@@ -1,6 +1,7 @@
 
 .plate {
-    padding-bottom: 50%;
+    padding-top: 10px;
+    padding-bottom: 60%;
     position: relative;
     background-color: #f3f5f7;
 
@@ -10,14 +11,23 @@
 
     &--01{
         background-image: url(./../../img/collections/01.jpg);
+        @include mediaBg() {
+            background-image: url(./../../img/collections/01@2x.jpg);
+        }
     }
 
     &--02{
         background-image: url(./../../img/collections/02.jpg);
+        @include mediaBg() {
+            background-image: url(./../../img/collections/02@2x.jpg);
+        }
     }
 
     &--03{
         background-image: url(./../../img/collections/03.jpg);
+        @include mediaBg() {
+            background-image: url(./../../img/collections/03@2x.jpg);
+        }
     }
 }
 
