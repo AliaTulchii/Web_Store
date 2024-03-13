@@ -1,0 +1,47 @@
+.newsletter {
+    display: flex;
+    justify-content: center;
+    padding-top: 103px ;
+    padding-bottom: 93px;
+    height: 460px;
+    background-color: var(--page-bg);
+    background-image: url(./../../img/newsletter/hp.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include mediaBg(){
+    background-image: url(./../../img/newsletter/hp@2x.jpg);
+
+    }
+}
+
+.newsletter__content {
+    max-width: 488px;
+    backdrop-filter: blur(5px);
+    padding: 15px;
+}
+.newsletter__title {
+    
+}
+.newsletter__desc {
+    font-size: 18px;
+    line-height: 1.6666;
+    color: #fff;
+    margin-bottom: 32px;
+}
+.form-newsletter {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #fff;
+}
+.form-newsletter__input {
+
+
+    &::placeholder{
+        color: #ffffff8f;
+    }
+}
+.form-newsletter__submit {
+    color: #fff;
+}
