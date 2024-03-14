@@ -21,7 +21,10 @@
 }
 
 .nav__link{
+    font-size: 20px;
+    font-weight: 500;
     color: var(--text-color);
+    transition: all 0.3s ease-in-out;
 
     &:hover, :focus{
         color: #39d3f9d9;
@@ -36,7 +39,13 @@
     align-items: center;
 }
 .nav__btn {
-    
+    transition: all 0.3s ease-in-out;
+    padding: 5px;
+
+    &:hover, :focus{
+        background-color: var(--accent);
+        border-radius: 8px;
+    }
 }
 
 .nav__btn-cart{
