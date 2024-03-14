@@ -1,17 +1,16 @@
 .newsletter {
     display: flex;
     justify-content: center;
-    padding-top: 103px ;
-    padding-bottom: 93px;
+    padding-top: 100px ;
     height: 460px;
     background-color: var(--page-bg);
-    background-image: url(./../../img/newsletter/hp.jpg);
+    background-image: url(./../img/newsletter/hp.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 
     @include mediaBg(){
-    background-image: url(./../../img/newsletter/hp@2x.jpg);
+    background-image: url(./../img/newsletter/hp@2x.jpg);
 
     }
 }
@@ -34,14 +33,23 @@
     display: flex;
     gap: 8px;
     border-bottom: 1px solid #fff;
+    padding-bottom: 12px;
 }
+
 .form-newsletter__input {
 
-
+flex-grow: 1;
     &::placeholder{
         color: #ffffff8f;
     }
 }
+
 .form-newsletter__submit {
     color: #fff;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        color: var(--accent);
+
+    }
 }
