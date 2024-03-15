@@ -7,18 +7,33 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-
+    @media (max-width: 1184px){
+        height: 700px;
+    }
 }
 
 .hero__box{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 1184px){
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+
+    }
 }
 
 .hero__img{
     width: 550px;
     margin-right: 90px;
+
+    @media (max-width: 1184px){
+        width: 300px;
+        margin-top: 50px;
+        margin-right: 0;
+    }
 }
 
 .hero__title {
@@ -28,6 +43,11 @@
     letter-spacing: -3px;
     font-family: var(--font-accent);
     margin-bottom: 18px;
+    text-wrap: balance;
+
+    @media (max-width: 1184px){
+        font-size: 45px;
+    }
 }
 .hero__blue{
     color: var(--accent);
@@ -36,8 +56,5 @@
     margin-bottom: 28px;
     font-size: 20px;
     line-height: 1.6;
-}
-.hero__btn {
-    
 }
 

@@ -31,10 +31,10 @@ function updateTimer() {
     const seconds = Math.floor((timeDifference % (1000 * 60)) / (1000));
 
 
-    daysEl.innerText = days;
-    hoursEl.innerText = hours;
-    minutesEl.innerText = minutes;
-    secondsEl.innerText = seconds;
+    daysEl.innerText = days < 10 ? '0' + days : days;
+    hoursEl.innerText = hours < 10 ? '0'+ hours : hours;
+    minutesEl.innerText = minutes < 10 ? '0' + minutes : minutes;
+    secondsEl.innerText = seconds < 10 ? '0' + seconds : seconds;
 
 
 }
