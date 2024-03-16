@@ -7,6 +7,10 @@
 	@media (max-width: 1200px) {
 		font-size: 26px;
 	}
+
+	@include tablet{
+		font-size: 14px;
+	}
 }
 
 .footer__row {
@@ -26,6 +30,11 @@ padding-bottom: 50px;
 	align-items: center;
 	flex-shrink: 0;
 	font-size: 18px;
+
+	@include tablet{
+		gap: 16px;
+		font-size: 14px;
+	}
 }
 
 .footer__separatore{
@@ -44,6 +53,10 @@ padding-bottom: 50px;
 	gap: 40px;
 	align-items: center;	
 	line-height: 1.541;
+
+	@include tablet{
+		gap: 16px;
+	}
 
 	.footer__nav-link{
 		color: #fff;

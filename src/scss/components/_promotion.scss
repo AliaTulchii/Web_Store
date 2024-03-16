@@ -27,13 +27,22 @@
         (100% - var(--container-width)) / 2 + (var(--container-width) / 2)
     );
 
-    padding-right: calc((100% - var(--container-width)) / 2)
+    padding-right: calc((100% - var(--container-width)) / 2);
+
+    @include tablet {
+        padding-righ:  var(--container-padding);
+    }
+    
 }
 
 .promotion__content {
     padding: 100px 0 100px 72px;
     display: grid;
     gap: 24px;
+
+    @include tablet{
+    padding: 100px 0 100px 45px;
+    }
 }
 .promotion__tagline {
     color: var(--text);

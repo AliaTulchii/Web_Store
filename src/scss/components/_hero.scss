@@ -7,7 +7,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    @media (max-width: 1184px){
+    @include tablet{
         height: 700px;
     }
 }
@@ -17,22 +17,21 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 1184px){
-        flex-direction: column-reverse;
-        justify-content: center;
-        text-align: center;
-
+    @include tablet{
+        // flex-direction: column-reverse;
+        justify-content:center;
+        
     }
 }
 
 .hero__img{
-    width: 550px;
+    max-width: 550px;
     margin-right: 90px;
 
-    @media (max-width: 1184px){
-        width: 300px;
+    @include tablet{
+        width: 350px;
         margin-top: 50px;
-        margin-right: 0;
+        margin-right: 20px;
     }
 }
 
@@ -45,8 +44,9 @@
     margin-bottom: 18px;
     text-wrap: balance;
 
-    @media (max-width: 1184px){
+    @include tablet{
         font-size: 45px;
+        max-width: 300px;
     }
 }
 .hero__blue{
