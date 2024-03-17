@@ -16,13 +16,26 @@
         font-size: 16px;
         padding: 5px;
     }
+
+    @include mobile{
+        font-size: 14px;
+        padding: 5px;
+    }
 }
 
 .logo__pink{
     color: #ff42ba;
     font-size: 30px;
+
+    @include mobile{
+        font-size: 18px;
+    }
 }
 
 .logo__monster{
     width: 50px;
+
+    @include mobile{
+        width: 30px;
+    }
 }

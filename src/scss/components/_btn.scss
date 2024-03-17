@@ -13,6 +13,11 @@
 
     transition: all 0.4s ease-in-out;
 
+    @include mobile{
+        font-size: 16px;
+        
+    }
+
     &--small{
         padding: 9px 40px;
         font-style: 16px;
