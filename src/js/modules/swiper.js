@@ -3,15 +3,21 @@ import Swiper from 'swiper/bundle';
 
 function swiper() {
     const swiper = new Swiper('.swiper', {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    // Optional parameters
-    loop: true,
+      spaceBetween: 12,
+      slidesPerView: 2,
+      loop: true,
   
+      breakpoints: {
+        740: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+        }
+    },
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
     },
   
   });

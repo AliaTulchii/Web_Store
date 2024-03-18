@@ -24,10 +24,16 @@
         font-weight: 500;
         letter-spacing: -0.4px;
         line-height: 1.75;
+
+        
     }
 
     &--wide{
         width: 100%;
+        @include mobile{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
 
     &:hover, :focus{
