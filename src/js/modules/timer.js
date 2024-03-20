@@ -4,7 +4,7 @@ function timer() {
 // endDate.setDate(endDate.getDate() + 3);// // 3 days from today
 
 
-const endDate = new Date('March 18, 2024, 06:59:00');
+const endDate = new Date('May 18, 2024, 06:59:00');
 
 const daysEl = document.querySelector('#days');
 const hoursEl = document.querySelector('#hours');
