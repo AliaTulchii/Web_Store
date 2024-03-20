@@ -10,29 +10,33 @@
 <body>
     <div class="tagline">
 
-    <div class="tagline__icon">
-        <img src="./img/icons/ticket-percent.svg" alt="icon">
-    </div>
-
-    <div class="tagline__desc">
+    <img src="./img/icons/ticket-percent.svg" alt="icon">
+    
+    <span class="tagline__desc">
         30% off storewide - Limited time!
-    </div>
-
-    <a href="#!" class="tagline__link">
+    </span>
+    <span href="#!" class="tagline__link">
     Shop Now
     <img class="tagline__arrow" src="./img/icons/arrow-right.svg" alt="icon">
-    </a>
+    </span>
     
     <button class="tagline__close">
         <img src="./img/icons/close.svg" alt="close">
     </button>
+
+    <a href="#!" class="tagline__link-overlay"></a>
 </div> 
     <nav class="nav">
     <div class="container">
         <div class="nav__row">
+            <div class="nav__mobile">
+                <button class="nav__btn" id="mobile-nav-btn">
+                <img class="nav__menu" src="./../../img/icons/menu.svg" alt="navigation">
+                </button>
             <a href="#" class="nav__logo logo">
                 <span class="logo__pink">M</span>on<span class="logo__pink">S</span>ound.
             </a>
+            </div>
         <ul class="nav__list">
             <li class="nav__item">
                 <a class="nav__link" href="#">Home</a>
@@ -55,11 +59,11 @@
         </ul>
 
         <div class="nav__btns">
-            <button class="nav__btn">
+            <button class="nav__btn nav__btn--search">
                 <img src="./img/icons/search.svg" alt="icon">
             </button>
 
-            <button class="nav__btn">
+            <button class="nav__btn nav__btn--user">
                 <img src="./img/icons/user.svg" alt="icon">
             </button>
 
@@ -71,7 +75,30 @@
         </div>        
     </div>
 </nav>   
-    
+    <div class="mobile-nav">
+
+    <div class="mobile-nav__top">
+		<div class="mobile-nav__header">header</div>
+		<div class="mobile-nav__search">search</div>
+		<div class="mobile-nav__nav">nav</div>
+	</div>
+
+    <div class="mobile-nav__bottom">
+        <div class="mobile-nav__links">
+        links
+		</div>
+		<div class="mobile-nav__sign-in">
+			sign in
+		</div>
+		<div class="mobile-nav__socials">
+			socials
+		</div>
+	</div>
+
+</div>
+
+<div class="mobile-nav-fade">	
+</div>
     
     <section class="hero">
     <div class="container">
@@ -86,11 +113,11 @@
                 <p>Experience music like never before</p>
                 
             </div>
-            <div class="hero__btn">
+            
                 <a href="#" class="btn ">
                 Shopping now
                 </a>
-            </div>
+            
             
         </div>
         </div>
@@ -574,7 +601,7 @@
                 <img src="./img/icons/star.svg" alt="Star">
             
         </div>
-        <div class="card__title">
+        <div class="card__title card__title--oneline">
             Skullcandy - Crusher anc 2 wireless headphones
         </div>
         <div class="card__price">$299.99</div>
@@ -609,8 +636,8 @@
                 <img src="./img/icons/star.svg" alt="Star">
             
         </div>
-        <div class="card__title">
-            Beats Studio Pro
+        <div class="card__title card__title--oneline">
+            Beats Studio Pro Crusher MH-CH390N Wireless
         </div>
         <div class="card__price">$349.99</div>
     </div>
@@ -646,7 +673,7 @@
                 <img src="./img/icons/star.svg" alt="Star">
             
         </div>
-        <div class="card__title">
+        <div class="card__title card__title--oneline">
             Sony - WH-CH720N Wireless Noise Canceling
         </div>
         <div class="card__price">$149.99</div>
@@ -685,7 +712,7 @@
                 <img src="./img/icons/star.svg" alt="Star">
             
         </div>
-        <div class="card__title">
+        <div class="card__title card__title--oneline">
             Skullcandy - Rall True Wireless Earbuds
         </div>
         <div class="card__price">$79.99</div>
@@ -718,7 +745,7 @@
                 <img src="./img/icons/star.svg" alt="Star">
             
         </div>
-        <div class="card__title">
+        <div class="card__title card__title--oneline">
             Beats Studio Pro
         </div>
         <div class="card__price">$224.99</div>
@@ -757,7 +784,7 @@
                 <img src="./img/icons/star.svg" alt="Star">
             
         </div>
-        <div class="card__title">
+        <div class="card__title card__title--oneline">
             Skullcandy - Crusher anc 2 wireless headphones
         </div>
         <div class="card__price">$299.99</div>
@@ -792,7 +819,7 @@
                 <img src="./img/icons/star.svg" alt="Star">
             
         </div>
-        <div class="card__title">
+        <div class="card__title card__title--oneline">
             Beats Studio Pro
         </div>
         <div class="card__price">$349.99</div>
@@ -829,7 +856,7 @@
                 <img src="./img/icons/star.svg" alt="Star">
             
         </div>
-        <div class="card__title">
+        <div class="card__title card__title--oneline">
             Sony - WH-CH720N Wireless Noise Canceling
         </div>
         <div class="card__price">$149.99</div>
@@ -884,6 +911,8 @@
             <div class="promotion__btn">
                 <a href="#" class="btn btn--small">Shop now</a>
             </div>
+
+            
             
         </div>
     </div>
@@ -973,11 +1002,15 @@
                 <li class="footer__nav-item"><a href="#" class="footer__nav-link">Contact us</a> </li>
             </ul>
         </div>
-        <div class="footer__row footer_row--border">
+        <div class="footer__row footer__row--border">
             <div class="footer__copyrights">
                 <p>Copyright 2023 MonSound. All rights reserved</p>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Use</a>
+                
+                <p class="footer__copyrights-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </p>
+                
             </div>
 
 
