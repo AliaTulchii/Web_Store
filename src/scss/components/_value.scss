@@ -1,6 +1,10 @@
 .value {
     padding: 48px 32px;
     background-color: #f3f5f7;
+
+    @include mobile{
+    padding: 32px 16px;
+    }
 }
 .value__img {
     margin-bottom: 16px;
@@ -12,6 +16,11 @@
     font-weight: 500;
     font-family: var(--font-accent);
     color: var(--accent);
+
+    @include mobile{
+    margin-bottom: 4px;
+    font-size: 14px;
+    }
 }
 .value__desc {
     color:#6c7275;

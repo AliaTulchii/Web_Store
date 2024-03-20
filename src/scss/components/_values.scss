@@ -7,11 +7,22 @@
     flex-wrap: wrap;
     gap: 24px;
 
-    &> * {
+    & > * {
         flex: 1;
         min-width: 262px;
     }
     // display: grid;
     // grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
     // gap: 24px;
+
+    @include mobile{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: 24px 8px;
+
+        & > * {
+            flex: none;
+            min-width: auto;
+        }
+    }
 }
