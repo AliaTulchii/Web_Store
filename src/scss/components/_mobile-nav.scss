@@ -1,4 +1,5 @@
 .mobile-nav{
+
     position: fixed;
     left: 0;
     top: 0;
@@ -7,14 +8,25 @@
     padding: 24px;
     background-color: #52c5fa;
     z-index: 99;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in;
+
+    &--open{
+        opacity: 1;
+        pointer-events: all;
+    transform: translateX(0%);
+
+    }
 }
 
 .mobile-nav-fade{
+    display: block;
     position: fixed;
     z-index: 9;
     left: 0;
@@ -22,6 +34,14 @@
     width: 100%;
     height: 100%;
     background-color: rgba(86, 86, 86, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+
+    &--open{
+        opacity: 1;
+        pointer-events: all;
+    }
 }
 
 
