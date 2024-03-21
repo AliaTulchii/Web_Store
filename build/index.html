@@ -78,20 +78,88 @@
     <div class="mobile-nav">
 
     <div class="mobile-nav__top">
-		<div class="mobile-nav__header">header</div>
-		<div class="mobile-nav__search">search</div>
-		<div class="mobile-nav__nav">nav</div>
+		<div class="mobile-nav__header">
+			<a href="#" class="nav__logo logo logo--small">
+                <span class="logo__pink">M</span>on<span class="logo__pink">S</span>ound.
+            </a>
+			<button id="close-mobile-nav">
+				<img src="./img/icons/close-mobile.svg" alt="icon">
+			</button>
+		</div>
+
+		<form class="mobile-nav__search">
+			<div class="mobile-nav__search-label">
+				<img src="./img/icons/search.svg" alt="icon">
+				<input type="text" placeholder="Search" class="mobile-nav__search-input">
+			</div>
+            
+		</form>
+
+		<div class="mobile-nav__nav">
+			<ul class="mobile-nav__list">
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link" href="#">Home</a>
+				</li>
+				<li class="mobile-nav__item">
+					<button class="mobile-nav__link" href="#">
+						Shop
+						<img src="./img/icons/chevron-down.svg" alt="arrow down" class="nav__down">
+					</button>
+				</li>
+				<li class="mobile-nav__item">
+					<button class="mobile-nav__link" href="#">
+						Product
+						<img src="./img/icons/chevron-down.svg" alt="arrow down" class="nav__down">
+					</button>
+				</li>
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link" href="#">Contact us</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 
     <div class="mobile-nav__bottom">
-        <div class="mobile-nav__links">
-        links
-		</div>
 		<div class="mobile-nav__sign-in">
-			sign in
+			<a href="#" class="btn btn--nav-mobile">
+                Sign in
+			</a>
 		</div>
+
+        <div class="mobile-nav__links">
+			<ul class="mobile-nav__list mobile-nav__list--bottom">
+				<li class="mobile-nav__item">
+					<button class="mobile-nav__link" href="#">
+						Cart
+						<div>
+							<img src="./../../img/icons/cart.svg" alt="arrow down" class="nav__down">
+						    <span class="mobile-nav__btn-count">2</span>
+						</div>
+						</button>
+				</li>
+				<li class="mobile-nav__item">
+					<button class="mobile-nav__link" href="#">
+						Wishlist
+						<div>
+							<img src="./../../img/icons/fav-mobile.svg" alt="arrow down" class="nav__down">
+						    <span class="mobile-nav__btn-count">2</span>
+						</div>
+						
+					</button>
+				</li>
+			</ul>
+		</div>
+		
 		<div class="mobile-nav__socials">
-			socials
+			<a href="#" class="mobile-nav__socials-link">
+				<img src="./img/socials/instagram.svg" alt="Social">
+			</a>
+			<a href="#" class="mobile-nav__socials-link">
+				<img src="./img/socials/facebook.svg" alt="Social">
+			</a>
+			<a href="#" class="mobile-nav__socials-link">
+				<img src="./img/socials/youtube.svg" alt="Social">
+			</a>
 		</div>
 	</div>
 

@@ -39,6 +39,16 @@
         }
     }
 
+    &--nav-mobile{
+        width: 100%;
+        @include mobile{
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: var(--page-bg);
+            text-align: center;
+        }
+    }
+
     &:hover, :focus{
         background-color: var(--accent-hover);
     }
