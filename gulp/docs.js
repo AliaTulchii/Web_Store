@@ -48,7 +48,7 @@ gulp.task('html:docs', function () {
             prefix: '@@',
             basepath: '@file',
         }))
-        .pipe(webpHTML())
+        // .pipe(webpHTML())
         .pipe(htmlclean())
         .pipe(gulp.dest('./docs/'))
 })
@@ -77,7 +77,7 @@ gulp.task('sass:docs', function () {
 gulp.task('images:docs', function () {
     return gulp.src('./src/img/**/*')
         .pipe(changed('./docs/img'))
-        .pipe(webp())
+        // .pipe(webp())
         .pipe(gulp.dest('./docs/img'))
 
         .pipe(gulp.src('./src/img/**/*'))

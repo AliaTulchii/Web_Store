@@ -51,7 +51,7 @@
 		font-size: 14px;
 	}
 
-	@include tablet{
+	@include mobile{
 		flex-direction: column;
 	}
 }
